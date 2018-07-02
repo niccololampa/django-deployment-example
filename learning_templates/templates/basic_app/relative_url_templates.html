@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Welcome to relative url templates</h1>
+
+    <!-- normally we do this for linking
+    <a href="basic_app/other.html">The Other Page</a> -->
+
+    <!-- To use relative links in django. The basic_app here can be found in urls.py  -->
+    <a href="{% url 'basic_app:other' %}">The Other Page</a>
+    <!-- remember no space between app_name:urlname or will cause an error. -->
+
+    <!-- adding admin page as anchor -->
+    <!-- might need to do migration -->
+    <a href="{% url 'admin:index' %}">Admin</a>
+
+    <!-- go to index page -->
+    <a href="{% url 'index' %}">Home</a>
+
+
+
+
+  </body>
+</html>

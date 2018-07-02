@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+{% extends "basic_app/base.html" %}
+  {% load my_extras %}
+  {% block body_block%}
+
+    <h1>Welcome to Index</h1>
+    <h1>This in index.html page showing!</h1>
+
+    <!-- example of template filters. just put in the dictionary key then the pipe operator and insert the python operation -->
+    <h1>{{text|upper }}</h1>
+    <!-- here a addition opration is done to number =100 -->
+    <h1>{{number|add:"99"}}</h1>
+
+    <!-- Example of creating a custom template filter. See teplatetags folder/my_extras.py -->
+
+    <h1>{{text|cut:'hello'}}</h1>
+
+
+  {% endblock %}

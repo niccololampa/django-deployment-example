@@ -1,0 +1,10 @@
+<!--Doc type should always be line number one   -->
+<!DOCTYPE html>
+<!-- you can remove all html tags since you are inherting  -->
+<!-- This will look for the basic html file  template folder  -->
+{% extends "basic_app/base.html" %}
+  <!--anything inside this is unique to the page  -->
+  {% block body_block %}
+    <h1>Welcome to other</h1>
+    <h2>This is an example of template inheritance</h2>
+  {% endblock %}
